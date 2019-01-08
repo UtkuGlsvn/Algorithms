@@ -10,13 +10,9 @@ public class MatrixCreate {
 	{
 
 		m=new int[n][k];
-		ArrayList<Integer> asd = new ArrayList<>();
 		for(int i=0;i<n;i++)
 			for(int j=0;j<k;j++)
-			{
 				m[i][j]=rand.nextInt(50) + 1;
-				asd.add(m[i][j]);
-			}
 		matrixScreenWrite(m,k);
 
 
@@ -27,7 +23,7 @@ public class MatrixCreate {
 		for (int i=0; i<m.length;i++)
 		{
 			for(int j=0;j<k;j++)
-				System.out.print((i+1)+".satýr"+(j+1)+".sütun :"+(m[i][j])+"\t");
+				System.out.print((i+1)+".satÃ½r"+(j+1)+".sÃ¼tun :"+(m[i][j])+"\t");
 			System.out.println();
 		}
 		System.out.println("***********************************************");
@@ -39,22 +35,22 @@ public class MatrixCreate {
 		int [][]m=null;
 		for(int i=0;i<l;i++)
 		{
-		System.out.println("Matrisin satýr sayýsýný giriniz:");
+		System.out.println("Matrisin satÃ½r sayÃ½sÃ½nÃ½ giriniz:");
 		int n = input.nextInt();
-		System.out.println("Matrisin sütun sayýsýný giriniz:");
+		System.out.println("Matrisin sÃ¼tun sayÃ½sÃ½nÃ½ giriniz:");
 		int j = input.nextInt();
 		matrixCreate(m,n,j);
 		}
 	}
 	public static void main(String[] args) {
-	System.out.println("Kaç matrix girmek istiyorsunuz");
+	System.out.println("KaÃ§ matrix girmek istiyorsunuz");
 	//input integer control
 	 if (input.hasNextInt()){
 			int n = input.nextInt();
 			matrixInput(n);
     }
     else {
-        System.out.println("Tam sayý giriniz!.");
+        System.out.println("Tam sayÃ½ giriniz!.");
     }
 	
 	}
